@@ -19,6 +19,14 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/Authentication', function () {
+    return view('Test-pages.Authentication');
+});
+
+Route::get('/Ajouter-utilisateur', function () {
+    return view('Test-pages.Ajouter-utilisateur');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
